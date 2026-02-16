@@ -1,0 +1,6 @@
+@AIPlanner_HostAddress = http://localhost:8000
+
+GET {{AIPlanner_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
