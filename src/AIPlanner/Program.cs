@@ -63,7 +63,7 @@ app.MapGet("/dailyplans/{id:guid}", async (Guid id, ApplicationDbContext db) =>
 
     return plan is null ? Results.NotFound() : Results.Ok(plan);
 });
-app.MapGet("/return", () => Results.Ok("Version 2"));
+app.MapGet("/return", () => Results.Ok("Version 3"));
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
